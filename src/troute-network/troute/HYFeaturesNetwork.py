@@ -559,7 +559,7 @@ class HYFeaturesNetwork(AbstractNetwork):
             self._link_lake_crosswalk = None
             self._duplicate_ids_df = pd.DataFrame()
 
-        #self._dataframe = self.dataframe.drop('waterbody', axis=1).drop_duplicates()
+        self._dataframe = self.dataframe.drop_duplicates()
 
     def preprocess_data_assimilation(self, network):
         if not network.empty:
