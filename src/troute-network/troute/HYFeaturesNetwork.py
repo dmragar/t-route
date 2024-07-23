@@ -253,6 +253,7 @@ class HYFeaturesNetwork(AbstractNetwork):
         if self.showtiming:
             start_time = time.time()
         
+        print("running D.R. fork!")
         #------------------------------------------------
         # Load hydrofabric information
         #------------------------------------------------
